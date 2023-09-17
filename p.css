@@ -1,0 +1,330 @@
+/*@media print {
+    html, body {
+       display: none;  
+    }
+}
+@media only screen and ( max-width: 800px){
+*/
+
+
+/*css reset*/
+*{
+  margin: 0px;
+  padding: 0px;
+}
+/*css variables */
+:root{
+  
+}
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+/*navigation bar*/
+#logo{
+  display: flex;
+  justify-content: left;
+  align-content: center;
+  
+}
+
+#navbar{
+  position: sticky;
+  display: flex;
+ 
+  
+  top:0px;
+  left:0px;
+ 
+}
+
+#nav{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  align-content: right;
+ 
+  
+}
+/*navigation bar : logo and image*/
+#logo{
+  margin: 3px 5px;
+  
+  
+}
+#logo img{
+  height: 40px;
+  margin: 1px;
+  border-radius: 40%;
+  
+}
+
+/*navigation bar : list item*/
+
+#navbar ul{
+  display: flex;
+  
+}
+
+#navbar::before{
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+#navbar ul li{
+  list-style: none;
+  font-size: 0.9rem;
+  
+}
+#navbar ul li a{
+  color: white;
+  display: block;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 3px 8px ;
+}
+#navbar ul li a:hover{
+  color:black;
+  background-color: white;
+}
+
+  /*Home section*/
+#home{
+  display: flex;
+  flex-direction: column;
+  padding: 3px 60px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  
+} 
+#home::before{
+  content: "";
+  position: absolute;
+  background: url(D:\web\food.jpeg) no-repeat center center/cover;
+  height: 45%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+  top: 0px;
+  left: 0px;
+  border-bottom: 2px solid black;
+}
+#home h1{ color:white;
+text-align: center;
+font-family: 'bree serif', serif;
+}
+#home p{
+  color: white;
+  font-size: 1 rem;
+  text-align: center;
+  font-family: 'bree serif', serif;
+}
+  .btn{ padding: 4px 12px;
+border: 1px solid white;
+background-color: brown;
+color: white;
+margin: 10Px;
+font-size: 1.2rem;
+border-radius: 12px;
+cursor: pointer;
+  
+}
+/*services section*/
+.services-container{
+  border-bottom: 2px solid black;
+}
+#services{
+ margin: 5px;
+ display: flex;
+ justify-content: center;
+}
+
+#services .box{
+  border: 2px solid black;
+  width: 90px;
+  
+  padding:10px;
+  margin: 2px 4px;
+  background-color: #C9F9FF;
+  justify-content: center;
+}
+#services .box img{
+height: 30px;
+  margin: auto;
+  display: block;
+}
+
+/*utility classes */
+.h-primary{
+  font-size: 22px;
+  padding: px;
+}
+.h-secondary{ font-size: 15px;
+padding: 7px;
+  
+}
+
+  
+
+.c{
+  font-size: 2vh;
+  
+  
+}
+.center{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+/*client section*/
+#client-section{
+  
+  height: 130px;
+  border-bottom: 2px solid black;
+}
+#client-section::before{
+  content:"";
+  position: absolute;
+  background: url(/bg.jpg)no-repeat center center/cover;
+  width: 100%;
+  height: 25%;
+  z-index: -2;
+  opacity: 0.6;
+  border-bottom: 2px solid black;
+}
+#clients{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#clients img{
+  height: 55px;
+}
+.client-item{
+  padding: 8px;
+  
+}
+img::before {
+  content: "";
+  
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: -3;
+  opacity: 0.2;
+}
+
+/*contact info*/
+#contact{
+  position: relative;
+}
+#contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 1;
+  background: url(D:\web\contact.jpeg) no-repeat center center/cover;
+  border-bottom: 2px solid black;
+}
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+#contact-box input,
+#contact-box textarea{
+  width: 100%;
+  padding: 0.3rem;
+  border-radius: 9px;
+  font-size: 1.1 rem;
+}
+#contact-box form{
+  width: 70%;
+}
+#contact-box leble{
+  font-size: 1rem;
+  
+}/*
+
+button[type="submit"]{
+    width: 150px;
+    height: 30px;
+    background-color: black;
+    box-shadow: 0 0 5px black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    z-index: 10;
+    position: relative;
+    top: 3px;
+    
+    transition: background 1s;
+    font-size: 20px;
+  }
+  button[type="submit"]:hover{
+    background-color: #FF0000;
+    box-shadow: 0 0 30px #24CA3D;
+    border: none;
+  }
+  button[type="submit"]:focus{
+    border: none;
+  }*/
+ .button{
+  width: 70px;
+  height: 30px;
+  font-size: 10px;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  transition: width .5s,
+  border-radius .5s;
+}
+
+.button *{
+  top: 50px;
+  left: 50px;
+  transform: translate(-50%,-50%);
+  transition: opacity .25s;
+}
+
+.icon{
+  opacity: 0;
+}
+.button:focus{
+  width: 30px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.button:focus .button{
+  opacity: 0;
+}
+
+.button:focus .icon{
+  opacity: 1;
+  transition-delay: .0.5s;
+}
+.button{
+  color: white;
+  background-color: black;
+}
+
+
+footer{ background: black;
+color: white;
+  padding: 9px 20px;
+}
+
